@@ -4,7 +4,7 @@ ADDON_NAME = example_addon
 # For old versions of Home Assistant, the addons directory is usually
 # /usr/share/hassio/addons/local
 # For current versions, the addons directory is
-ADDONS_DIR = /var/lib/homeassistant/addons/local/
+ADDONS_DIR = /var/lib/homeassistant/addons/local
 
 # == DO NOT EDIT BELOW THIS LINE ==
 # unless you know what you are doing
@@ -24,6 +24,3 @@ addon-clean:
 
 addon-reinstall:
 	ansible-playbook $(ANSIBLE_ARGS) --tags reinstall
-
-swagger:
-	cd pill_mate/backend; npm run swagger
