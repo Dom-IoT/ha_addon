@@ -25,8 +25,8 @@
 
 - name: Remove addon files
   ansible.builtin.file:
-  path: "{{ addons_dir }}/{{ addon_name }}"
-  state: absent
+    path: "{{ addons_dir }}/{{ addon_name }}"
+    state: absent
   tags: clean
 
 - name: Update ha addons store
