@@ -13,3 +13,7 @@ arch:
 startup: services
 ports:
   8000/tcp: 8000
+options:
+  core_addon_hostname: ""
+schema:
+  core_addon_hostname: str
